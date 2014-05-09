@@ -1,1 +1,1 @@
-This method reads in a text file and outputs a hash containing the frequency that each word occurs within the text. The textfile can have multiple lines or single lines without it affecting output
+This method reads in a text file and outputs a hash containing the frequency that each word occurs within the text. The textfile can have multiple lines or single lines without it affecting output. The method outputs the top 3 most frequent words. 
