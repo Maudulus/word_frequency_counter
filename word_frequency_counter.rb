@@ -16,14 +16,14 @@ def word_frequency(word_array)
 		end 
 		end 
 	end 
-  top_3_words = Hash[word_count_hash.sort_by {|k,v| k}.reverse.first(3)]
+  top_3_words = Hash[word_count_hash.sort_by {|k,v| v}.reverse.first(3)]
   puts top_3_words
   puts word_count_hash["bernardo"]
 end 
 
 array = []
 
-f = File.open("shakespeare.txt", "r")
+f = File.open("snippet.txt", "r")
 f.each_line do |line|
   array << line.split(" ")
   array = array.flatten 

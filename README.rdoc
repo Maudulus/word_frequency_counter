@@ -1,1 +1,4 @@
-This method reads in a text file and outputs a hash containing the frequency that each word occurs within the text. The textfile can have multiple lines or single lines without it affecting output. The method outputs the top 3 most frequent words. 
++ This method reads in a text file and outputs a hash containing the frequency that each word occurs within the text. 
++ The textfile can have multiple lines or single lines without it affecting output. 
++ The method outputs the top 3 most frequent words. 
++ fast_word_frequency_counter.rb performs the operation in a fraction of the time of the original word_frequency_counter.rb (0.003998 seconds compared to 2.8539 seconds)

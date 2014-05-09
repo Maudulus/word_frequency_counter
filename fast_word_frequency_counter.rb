@@ -1,7 +1,7 @@
 require "pry" 
 require 'benchmark'
 
-def sort_hamlet(textfile)
+def sort_textfile(textfile)
 	f = File.open(textfile, "r")
 	word_count_hash = {}
 		f.each_line do |line|
@@ -17,4 +17,6 @@ def sort_hamlet(textfile)
   top_3_words = Hash[word_count_hash.sort_by {|k,v| v}.reverse.first(3)]
   puts top_3_words
 end 
-puts Benchmark.measure { puts sort_hamlet("shakespeare.txt") } 
+puts Benchmark.measure { puts sort_textfile("the_tragedy_of_Hamlet.txt") } 
+puts Benchmark.measure { puts sort_textfile("snippet.txt") } 
+
